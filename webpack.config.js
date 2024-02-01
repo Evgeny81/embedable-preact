@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 const esmOutput = {
   path: path.join(__dirname, "dist"),
-  filename: "scheduler.js",
+  filename: "embed.js",
   library: {
     type: "module",
   },
@@ -11,8 +11,8 @@ const esmOutput = {
 
 const umdOutput = {
   path: path.join(__dirname, "dist"),
-  filename: "scheduler.js",
-  library: "Scheduler",
+  filename: "embed.js",
+  library: "Embed",
   libraryTarget: "umd",
   umdNamedDefine: true,
 }
